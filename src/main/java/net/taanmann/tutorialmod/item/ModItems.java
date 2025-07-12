@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.taanmann.tutorialmod.TutorialMod;
 import net.taanmann.tutorialmod.item.custom.ChiselItem;
+import net.taanmann.tutorialmod.item.custom.FuelItem;
 import org.checkerframework.checker.units.qual.C;
 
 public class ModItems {
@@ -25,6 +26,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> KOHLRABI = ITEMS.register("kohlrabi",
             () -> new Item(new Item.Properties().food(ModFoodProperties.KOHLRABI)));
+
+    public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
+            () -> new FuelItem(new Item.Properties(), 3200));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
