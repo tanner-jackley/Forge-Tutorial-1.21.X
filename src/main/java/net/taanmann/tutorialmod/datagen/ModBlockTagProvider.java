@@ -33,5 +33,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.ALEXANDRITE_ORE.get())
                 .add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get())
                 .add(ModBlocks.MAGIC_BLOCK.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.ALEXANDRITE_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.ALEXANDRITE_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.ALEXANDRITE_WALL.get());
     }
 }
